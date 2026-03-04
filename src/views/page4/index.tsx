@@ -1,12 +1,17 @@
 import { motion } from "framer-motion";
-import { pageVariant4 } from "../../const/variants";
+import {
+  pageSquareToBottom,
+  pageVariant,
+  pageVariant4,
+  pageVariantCircleHesitate,
+} from "../../const/variants";
 
 const Page = () => {
   return (
     <div className="relative w-full h-screen overflow-hidden bg-gray-100">
       {/* Animated Circle Overlay */}
       <motion.div
-        variants={pageVariant4}
+        variants={pageVariantCircleHesitate}
         initial="hidden"
         animate="visible"
         exit="exit"
